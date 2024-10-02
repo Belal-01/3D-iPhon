@@ -3,6 +3,7 @@ import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Highlights from './components/Highlights'
+import Modle from './components/modle'
 
 function App() {
   
@@ -13,6 +14,8 @@ function App() {
       <Navbar />
       <Hero />
       <Highlights/>
+      <Modle />
+      
      </main>
     </>
   )
