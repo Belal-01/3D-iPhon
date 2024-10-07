@@ -3,11 +3,11 @@ import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Highlights from './components/Highlights'
-import Modle from './components/modle'
 import * as Sentry from '@sentry/react'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
+import Modle from './components/modle'
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Hero />
       <Highlights/>
-      <Modle />
+      <Modle/>
       <Features/>
       <HowItWorks />
       <Footer />
