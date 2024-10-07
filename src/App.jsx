@@ -7,7 +7,7 @@ import * as Sentry from '@sentry/react'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
-import Modle from './components/modle'
+import Modle from './components/Modle'
 
 function App() {
 
