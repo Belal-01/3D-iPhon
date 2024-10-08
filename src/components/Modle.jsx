@@ -46,7 +46,7 @@ const Modle = () => {
   const tl = gsap.timeline();
   useEffect(()=>{
     if(size==='large'){
-      animateWithGsapTimeLine(tl,small,smallRotation,'#view1','#view2',{transform:'translateX(-100%)',duration:2})
+      animateWithGsapTimeLine(tl,small,smallRotation,'#view1','#view2',{transform:'translateX(-140%)',duration:2})
     }
     if(size==='small'){
       animateWithGsapTimeLine(tl,larg,largRotation,'#view2','#view1',{transform:'translateX(0)',duration:2})
@@ -61,7 +61,7 @@ const Modle = () => {
         </h1>
 
         <div className="flex flex-col items-center mt-5">
-          <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
+          <div className="flex justify-center w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModleView 
             index={1}
             groupRef={small}

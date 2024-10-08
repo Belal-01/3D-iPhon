@@ -13,7 +13,7 @@ const ModleView = ({index,groupRef,gsapType,controlRef,setRotationState,size,ite
     <View
     index={index}
     id={gsapType}
-    className={` absolute w-full h-full ${index===2?'right-[-100%]':''}`}
+    className={` absolute w-[80%]  h-full ${index===2?'right-[-100%]':''}`}
     >
       <ambientLight intensity={0.3}/>
       <PerspectiveCamera makeDefault position={[0,0,4]} />
