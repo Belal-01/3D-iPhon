@@ -19,7 +19,7 @@ function App() {
     <>
 
         <main className='bg-black'>
-            
+            <Loader />
             <Navbar />
             <Hero />
             <Highlights/>

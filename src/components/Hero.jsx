@@ -27,7 +27,7 @@ const Hero = () => {
     })
     gsap.to('#cta',{
       opacity:1,
-      y:-15,
+      y:-25,
       delay:2
     })
   },[])
