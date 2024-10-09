@@ -4,8 +4,21 @@ import { pauseImg, playImg, replayImg } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import useSWR from 'swr'
+import { useStore } from '../../store'
+import { EllipseCurve } from 'three'
+
 
 const VideoCarousel = function(){
+  const setLoad = useStore((store)=>store.setLoaded)
+  useEffect(()=>{
+    if(hightlightsSlides){
+      console.log('true')
+      setLoad(true)
+      
+    }else
+      console.log('false')
+  },[hightlightsSlides])
   const videoRef = useRef([])
   const videoSpanRef = useRef([])
   const videoDivRef = useRef([])

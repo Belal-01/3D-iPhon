@@ -9,17 +9,20 @@ import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
 import Modle from './components/Modle'
 import { Suspense } from 'react'
-
 import Loader from './components/Loader'
+import { useStore } from '../store'
+
 
 
 function App() {
-
+  const Loaded = useStore((store)=>store.Loaded)
+  console.log(Loaded)
 
   return (
     <>
         <main className='bg-black'>
-      <Suspense fallback={<Loader />}>
+          {Loaded?
+          <>
             <Navbar />
             <Hero />
             <Highlights/>
@@ -27,7 +30,9 @@ function App() {
             <Features/>
             <HowItWorks />
             <Footer />
-      </Suspense>
+          </>
+            :<Loader/>
+            } 
         </main>
 
     </>
