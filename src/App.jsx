@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<Loader />}>
         <main className='bg-black'>
+      <Suspense fallback={<Loader />}>
             <Navbar />
             <Hero />
             <Highlights/>
@@ -27,8 +27,8 @@ function App() {
             <Features/>
             <HowItWorks />
             <Footer />
-        </main>
       </Suspense>
+        </main>
 
     </>
   )
