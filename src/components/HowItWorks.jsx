@@ -3,8 +3,10 @@ import { chipImg, frameImg, frameVideo } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { animateWithGsap } from './animations'
+import { ScrollTrigger } from 'gsap/all'
 
 const HowItWorks = () => {
+  gsap.registerPlugin(ScrollTrigger)
   const videoRef = useRef();
   useGSAP(()=>{
      gsap.from('#chip',{
@@ -17,12 +19,19 @@ const HowItWorks = () => {
       duration:2,
       ease:'power2.inOut'
      }) 
-     animateWithGsap('.g_fadeIn',{
+     gsap.to('.g_fadeIn',{
       opacity:1,
       y:0,
-      duration:1,
-      ease:'power2.inOut'
-     },{
+      scrollTrigger:{
+        trigger:'.g_fadeIn',
+        start:"bottom bottom"
+      }
+    //  animateWithGsap('.g_fadeIn',{
+    //   opacity:1,
+    //   y:0,
+    //   duration:1,
+    //   ease:'power2.inOut'
+    //  },{
 
      })
   },[])

@@ -8,9 +8,8 @@ import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
 import Modle from './components/Modle'
-
 import { Suspense } from 'react'
-import { Loader } from '@react-three/drei'
+import { Html, Loader } from '@react-three/drei'
 
 
 function App() {
@@ -18,9 +17,9 @@ function App() {
 
   return (
     <>
-      {/* <Suspense fallback={<Loader/>}> */}
+
         <main className='bg-black'>
-            <Loader />
+            
             <Navbar />
             <Hero />
             <Highlights/>
@@ -30,7 +29,7 @@ function App() {
             <Footer />
 
         </main>
-      {/* </Suspense> */}
+
     </>
   )
 }
