@@ -8,27 +8,29 @@ import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
 import Modle from './components/Modle'
-import { Loader } from '@react-three/drei'
+
 import { Suspense } from 'react'
+import { Loader } from '@react-three/drei'
+
 
 function App() {
 
 
   return (
     <>
-     <main className='bg-black'>
-      <Suspense fallback={<Loader/>}>
-      <Navbar />
-      <Hero />
-      <Highlights/>
-      <Modle/>
-      <Features/>
-      <HowItWorks />
-      <Footer />
-      </Suspense>
-    
-      
-     </main>
+      {/* <Suspense fallback={<Loader/>}> */}
+        <main className='bg-black'>
+            <Loader />
+            <Navbar />
+            <Hero />
+            <Highlights/>
+            <Modle/>
+            <Features/>
+            <HowItWorks />
+            <Footer />
+
+        </main>
+      {/* </Suspense> */}
     </>
   )
 }
