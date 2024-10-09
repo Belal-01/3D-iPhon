@@ -15,7 +15,7 @@ const Modle = () => {
 
     const [size,setSize] = useState('small')
     const [modle,setModle] = useState({
-      title:"iPhone 16 Pro in Natural Titanium",
+      title:"iPhone 15 Pro in Natural Titanium",
       color:["#8F8A81",'#FFE789','#6F6C64'],
       img:yellowImg,
     })
@@ -91,7 +91,7 @@ const Modle = () => {
             }}
             eventSource={document.getElementById('root')}
             >
-              <View.Port />
+              <View.Port/>
             </Canvas>
 
 
