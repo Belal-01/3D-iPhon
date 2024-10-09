@@ -32,7 +32,7 @@ const ModleView = ({index,groupRef,gsapType,controlRef,setRotationState,size,ite
       position={[0,0,0]}
       >
 
-      <Suspense fallback={<Loader />} >
+      <Suspense fallback={<Html><Loader /></Html>} >
         <IPhone 
         scale = {index===1?[15,15,15]:[17,17,17]}
         item = {item}
